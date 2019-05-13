@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, redirect, url_for, send_from_
 import matplotlib.pyplot as plt
 import matplotlib 
 
-matplotlib.use('agg')
+matplotlib.use('agg')   # mengubah backend yang digunakan 
 app = Flask(__name__)
 
 @app.route('/')
@@ -24,7 +24,7 @@ def data():
         nilai_y.append(int(i))
     
     # membuat grafik
-    plt.close()
+    plt.close()     # menghapus plot yang sudah ada sebelumnya
     plt.plot(nilai_x, nilai_y)
     plt.title('Grafik yang dihasilkan')
     plt.xlabel('Nilai X')
