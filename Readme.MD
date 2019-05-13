@@ -1,0 +1,19 @@
+# Flask - Matplotlib
+
+This repository contain a simple flask app where user can input two lists of numbers and the app will return the graphic that was made using matplotlib module.
+
+When I run this app I always get this warning message in my terminal
+
+```bash
+WARNING: QApplication was not created in the main() thread.
+```    
+
+So I used this line of code to change the backend that is used by matplotlib. Feel free to turn off this code, to know if the error also happens in your computer or not.
+
+```python 
+import matplotlib 
+matplotlib.use('agg')
+```
+
+More information about this can be found in the documentation
+https://matplotlib.org/tutorials/introductory/usage.html#backends
