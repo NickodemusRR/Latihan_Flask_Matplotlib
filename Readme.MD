@@ -2,6 +2,14 @@
 
 This repository contain a simple flask app where user can input two lists of numbers and the app will return the graphic that was made using matplotlib module.
 
+## Update 1
+Following the instructions from this link:
+
+https://technovechno.com/creating-graphs-in-python-using-matplotlib-flask-framework-pythonanywhere/
+
+I try to create another version of the app named app1.py, which can render html file that contains the graphic that we have made.
+
+### Note:
 When I run this app I always get this warning message in my terminal
 
 ```bash
